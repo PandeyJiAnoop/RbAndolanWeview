@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akp.rbandolan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RbAndolan"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.akp.rbandolan.ForgetActivity"
+            android:exported="true"></activity>
+        <activity android:name="com.akp.rbandolan.RegisterActivity"
+            android:exported="true"/>
+        <activity android:name="com.akp.rbandolan.LoginActivity"
+            android:exported="true"/>
+        <activity android:name="com.akp.rbandolan.MainActivity"
+            android:exported="true"/>
+        <activity android:name="com.akp.rbandolan.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
